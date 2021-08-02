@@ -1,0 +1,12 @@
+{
+  "name": "digital-wallet",
+  "version": "1.0.0",
+  "description": "digital wallet ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm start"
+  },
+  "author": "Md. Mohiuddin",
+  "license": "ISC"
+}
