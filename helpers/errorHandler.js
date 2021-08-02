@@ -1,6 +1,8 @@
+
 const stringifySafe = require("../helpers/stringifySafe");
 
 const errorResponseHandler = (ctx, err) => {
+
   const { status, title = null, errors = null, request = {}, data = {} } = err;
   const instance =
     request && request.path !== undefined ? request.path : ctx.request.url;
@@ -53,4 +55,5 @@ const errorResponseHandler = (ctx, err) => {
       });
   }
 };
+
 module.exports = errorResponseHandler;

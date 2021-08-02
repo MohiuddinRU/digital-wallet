@@ -1,4 +1,4 @@
-i/** @format */
+/** @format */
 const multer = require('@koa/multer');
 const upload = multer();
 const koaCompose = require('koa-compose');
@@ -9,8 +9,6 @@ const walletController = require('./controllers/wallet.js');
 
 const routers = new Router();
 const authenticate = require('./middlewares/authenticate');
-
-routers.get('/', health);
 
 routers.post('/users', userController.register);
 routers.put('/users', koaCompose([authenticate, upload.single('images')]), userController.createUser);  // add user details
