@@ -5,7 +5,7 @@ const mongoose = require("mongoose");
 const md5 = require("md5");
 const Schema = mongoose.Schema;
 
-mongoose.connect("mongodb+srv://root:VrIN2J6BXmT6cw8q@cluster0.xczmd.mongodb.net/summer?retryWrites=true&w=majority", {
+mongoose.connect("mongodb://localhost:27017/digitalwallet", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useFindAndModify: false,

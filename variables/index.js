@@ -1,7 +1,7 @@
 /** @format */
 
 const env = process.env.APP_ENV || 'local';
-const appPort = process.env.PORT;
+const appPort = process.env.PORT||2021;
 const host = process.env.APP_HOST;
 const secret = process.env.APP_SECRETKEY;
 const currencyConverter = process.env.CURRENCY_CONVERTER_URL;
@@ -14,7 +14,7 @@ const variables = {
   host,
   secret,
   allowedCurrencies,
-  currencyConverter,
+  currencyConverter
 };
 
 module.exports = variables;

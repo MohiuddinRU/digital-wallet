@@ -1,18 +1,10 @@
 /** @format */
 
 const mongoose = require('mongoose');
-const Schema = mongoose.Schema;
 
-mongoose.connect('mongodb+srv://root:VrIN2J6BXmT6cw8q@cluster0.xczmd.mongodb.net/summer?retryWrites=true&w=majority', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-  useFindAndModify: false,
-  useCreateIndex: true,
-});
+const { ObjectId } =  mongoose.Schema; 
 
-const ObjectId = Schema.ObjectId;
-
-const walletSchema = new Schema({
+const walletSchema = new mongoose.Schema({
   userId: String,
   currency: String,
   walletNumber: Number,

@@ -5,7 +5,7 @@ const koaCompose = require('koa-compose');
 
 const Router = require('koa-router');
 const userController = require('./controllers/user');
-const walletController = require('./controllers/wallet.js');
+const walletController = require('./controllers/wallet');
 
 const routers = new Router();
 const authenticate = require('./middlewares/authenticate');
