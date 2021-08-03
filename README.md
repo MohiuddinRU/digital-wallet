@@ -1,6 +1,6 @@
 # digital-wallet
 
-#SignUp API
+# SignUp API
 Signup api needs to be modified so that, user can signup with only email & password. no other information is required.
 
 **Input**:
