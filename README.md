@@ -1,6 +1,6 @@
 # digital-wallet
 
-RegisterUser API description:
+# RegisterUser API description:
 
 As an admin, I want my users to be registered before they start using my services.
 As a User, I want the registration process to be simple and short.
@@ -45,7 +45,7 @@ Failed Response:
 - message: validation error
 
 
-CreateUser API description:
+# CreateUser API description:
 
 As signup api only store email & password of a user,
 we need a new api to put rest of information of a user.
@@ -56,7 +56,3 @@ input:
 - name
 - phone
 - picture
-
-
-
-
