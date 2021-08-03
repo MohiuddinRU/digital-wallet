@@ -56,3 +56,27 @@ input:
 - name
 - phone
 - picture
+
+**Story** 
+#As an admin, I want to provide wallet details.
+
+#As an user, I want to get my wallet details without providing much information.
+
+
+**Endpoint**: /wallets
+**Method**: GET
+**Input**:
+
+**Output**
+-Wallet ID
+-Wallet balance
+-Wallet Currency in USD or BDT 
+
+**Success Response**:
+- status 200
+- message:  Wallet Description
+
+
+**Server Error:**
+- status 500
+- message: Server cannot process the request for an unknown reason
