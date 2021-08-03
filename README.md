@@ -57,6 +57,8 @@ input:
 - phone
 - picture
 
+# GetWallet API description
+
 **Story** 
 #As an admin, I want to provide wallet details.
 
