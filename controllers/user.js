@@ -95,9 +95,7 @@ exports.login = async (ctx) => {
 exports.createUser = async(ctx) =>{
      try {
         const { fullName, phoneNumber } = ctx.request.body;
-
-        const  { userid } = ctx.request.headers;
-        const userId = userid;
+        const  { userId} = ctx.request.headers;
 
         const validation = new Validator(ctx.request.body, userInfoRules);
 

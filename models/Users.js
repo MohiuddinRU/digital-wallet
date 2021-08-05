@@ -71,8 +71,4 @@ exports.updateUserInfo = async(userId, userInfo) => {
     return await UserModel.findOneAndUpdate({_id: userId}, userInfo);
 }
 
-//finding user details for order 
-exports.findUser = (userid)=>{
-  return UserModel.findOne({_id: userid});
-};
 

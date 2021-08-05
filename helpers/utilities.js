@@ -1,6 +1,6 @@
 /** @format */
 
-//  steram and buffer to convert inot the base64
+//  stream and buffer to convert inot the base64
 
 // function to encode file data to base64 encoded string
 exports.toaBase64 = (file) => {

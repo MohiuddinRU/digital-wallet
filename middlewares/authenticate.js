@@ -2,6 +2,7 @@
 
 const jwt = require('jsonwebtoken');
 const variables = require('../variables/index');
+
 module.exports = async function (ctx, next) {
   const token = ctx.request.headers.token;
 
@@ -9,7 +10,7 @@ module.exports = async function (ctx, next) {
     if (!err) {
       const userId = decoded.userObject.userId;
       if (userId) {
-        ctx.request.headers['userid'] = userId;
+        ctx.request.headers.userId =  userId ;
         await next();
       } else {
         ctx.status = 401;
