@@ -27,7 +27,7 @@ const isCurrencyAllowed = (currency) =>{
 
 exports.createWallet = async (ctx) => {
   try {
-    const userId = ctx.request.header.userid;
+    const { userId }  = ctx.request.header;
     const currency = ctx.request.body.currency.toUpperCase();
 
     const walletNumber = await getRandomWalletNumber();
@@ -74,7 +74,7 @@ exports.createWallet = async (ctx) => {
 exports.getWallet = async (ctx) => {
   try {
 
-    const userId = ctx.request.headers.userid;
+    const { userId }  = ctx.request.headers;
 
     if(!userId){
       throw{
