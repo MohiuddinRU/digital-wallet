@@ -1,8 +1,5 @@
 /** @format */
-
 const mongoose = require('mongoose');
-
-const { ObjectId } =  mongoose.Schema; 
 
 const walletSchema = new mongoose.Schema({
   userId: String,
@@ -25,7 +22,6 @@ exports.checkWalletDuplicacy = async (userId, currency) => {
 exports.create = async (walletInfo) => {
   return await walletModel.create(walletInfo);
 };
-
 
 exports.findWalletNumber = async (walletId, userId) => {
   //return { walletNumber: "5789485632", currency: "USD", balance: 1689.0 };
