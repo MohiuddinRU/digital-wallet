@@ -1,4 +1,4 @@
-# digital-wallet
+# Digital Wallet
 
 You can test the code with the postman collection below: 
 
