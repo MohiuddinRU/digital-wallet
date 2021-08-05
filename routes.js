@@ -11,8 +11,8 @@ const routers = new Router();
 const authenticate = require('./middlewares/authenticate');
 
 routers.post('/users', userController.register);
-routers.put('/users', koaCompose([authenticate, upload.single('images')]), userController.createUser);  // add user details
 routers.post('/login', userController.login);
+routers.put('/users', koaCompose([authenticate, upload.single('images')]), userController.createUser);  // add user details
 
 routers.post('/wallet', authenticate, walletController.createWallet);
 routers.get('/wallet', authenticate, walletController.getWallet);

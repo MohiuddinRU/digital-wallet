@@ -95,7 +95,7 @@ exports.login = async (ctx) => {
 exports.createUser = async(ctx) =>{
      try {
         const { fullName, phoneNumber } = ctx.request.body;
-        const  { userId} = ctx.request.headers;
+        const  { userId } = ctx.request.headers;
 
         const validation = new Validator(ctx.request.body, userInfoRules);
 
@@ -108,7 +108,6 @@ exports.createUser = async(ctx) =>{
         }
      
         const convertedImage = await utility.toaBase64(ctx.file.buffer);
-
         const maxSize = variables.maximumImageSize;
 
         
@@ -121,14 +120,13 @@ exports.createUser = async(ctx) =>{
           };
         }
 
-       // saving products related informations onto the database
-
         const information = {
           fullName,
           phoneNumber,
           image: convertedImage,
         };
         const returnedInfo = await userModel.updateUserInfo(userId, information);
+        console.log(returnedInfo);
 
         ctx.body = {
           data: returnedInfo,
