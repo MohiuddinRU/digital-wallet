@@ -1,5 +1,9 @@
 # digital-wallet
 
+You can test the code with the postman collection below: 
+
+https://www.getpostman.com/collections/1be195edc8b0849ca040
+
 # SignUp API
 Signup api needs to be modified so that, user can signup with only email & password. no other information is required.
 
